@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ポートフォリオ</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font AwesomeのCDNを追加 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/7-1-20.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <h1>nori.co design</h1>
+        </a>
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="works.html">works</a></li>
+                <li><a href="access.html">access</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <nav id="nav">
+            <ul class="toggle-menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="works.html">works</a></li>
+                <li><a href="access.html">access</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="mask"></div>
+    </header>
+    <main>
+        <div id="contact" class="container">
+            <h2 class="title">contact</h2>
+            <div class="contact">
+                <div class="contact-text">
+                    <p>フラワーギフトのご注文の方は、花束かアレンジメントをご選択のうえ、<br>メッセージ欄にご用途とご予算をご記入ください。<br>迷われている場合はご相談ください。</p>
+                    <p>季節のおまかせブーケをご注文の方は、ご希望のお渡し日をメッセージ欄にご記入ください。</p>
+                </div>
+                <div class="contact-form">
+                    <dl>
+                        <dt><label for="name">お名前</label></dt>
+                        <dd><input type="text" id="name" name="your-name"></dd>
+                        <dt><label for="email">メールアドレス</label></dt>
+                        <dd><input type="text" id="email" name="" your-email></dd>
+                        <dt><label for="tell">電話番号</label></dt>
+                        <dd><input type="text" id="tell" name="" your-tell></dd>
+                        <label for="checkbox1">花束</label>
+                        <input type="checkbox" id="checkbox1" onclick="toggleCheckboxes('checkbox1', 'checkbox2')">
+                        <label for="checkbox2">アレンジメント</label>
+                        <input type="checkbox" id="checkbox2" onclick="toggleCheckboxes('checkbox2', 'checkbox1')">
+                        <dt><label for="message">メッセージ</label></dt>
+                        <dd><textarea id="message" name="your-message"></textarea></dd>
+                    </dl>
+
+                    <div class="btn">
+                        <!-- <a href=""><input type="submit" value="メッセージを送信する"></a> -->
+                        <a href="#" class="float3">メッセージを送信する</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <a id="to-top" href="#"></a>
+        <div class="copy">
+            <p>©2024 portfolio</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
